@@ -1,12 +1,19 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
 const UsersFlatListRenderComponent = ({ item }) => {
+  const navigator = useNavigation();
+
+  const handleViewUser = () => {
+    navigator.navigate("User", { user: item });
+  };
+
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={handleViewUser}>
       <Text style={[styles.name]}>{item.name}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
