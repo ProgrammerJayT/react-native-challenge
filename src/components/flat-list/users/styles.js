@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginBottom: 10,
-    backgroundColor: "lightgray",
+    backgroundColor: "papayawhip",
     padding: 20,
     marginHorizontal: 10,
     borderRadius: 5,
@@ -14,5 +14,6 @@ export const styles = StyleSheet.create({
 
   name: {
     fontSize: 20,
+    fontWeight: "bold",
   },
 });
