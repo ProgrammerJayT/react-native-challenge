@@ -12,7 +12,7 @@ const UsersFlatListRenderComponent = ({ item }) => {
 
   return (
     <TouchableOpacity style={styles.container} onPress={handleViewUser}>
-      <Text style={[styles.name]}>{item.name}</Text>
+      <Text style={[styles.name]}>{`${item.name} ${item.surname}`}</Text>
     </TouchableOpacity>
   );
 };
